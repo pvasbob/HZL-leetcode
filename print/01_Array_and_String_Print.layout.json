@@ -1,0 +1,375 @@
+{
+  "category": "1. Array & String",
+  "source": "solutions/01_array_and_string.md",
+  "source_sha256": "630043bff799f24780602d78f77bb8f8f315f8e1f6dbdb42be46b34fb4717491",
+  "problems": 50,
+  "pages": 9,
+  "layout": "US Letter portrait, two columns",
+  "font_size_pt": 9,
+  "code_font": "Liberation Mono",
+  "body_font": "Liberation Sans",
+  "line_spacing_pt": 10,
+  "margins_inches": 0.3,
+  "gutter_inches": 0.2,
+  "difficulty_beside_every_title": true,
+  "difficulty_counts": {
+    "Easy": 14,
+    "Medium": 32,
+    "Hard": 4
+  },
+  "printed_headers": false,
+  "printed_footers": false,
+  "printed_page_numbers": false,
+  "problem_order": "repacked by size; original rank labels and LC IDs retained",
+  "page_lower_bound_for_this_typography": 9,
+  "matches_page_lower_bound": true,
+  "solutions_kept_in_one_column": 50,
+  "split_solutions": [],
+  "solution_placements": {
+    "1": [
+      1,
+      1
+    ],
+    "3": [
+      1,
+      2
+    ],
+    "238": [
+      2,
+      1
+    ],
+    "53": [
+      2,
+      2
+    ],
+    "121": [
+      3,
+      1
+    ],
+    "26": [
+      3,
+      2
+    ],
+    "283": [
+      2,
+      2
+    ],
+    "15": [
+      4,
+      1
+    ],
+    "11": [
+      4,
+      2
+    ],
+    "42": [
+      5,
+      1
+    ],
+    "56": [
+      1,
+      2
+    ],
+    "88": [
+      5,
+      2
+    ],
+    "189": [
+      2,
+      2
+    ],
+    "75": [
+      6,
+      1
+    ],
+    "169": [
+      6,
+      2
+    ],
+    "217": [
+      6,
+      1
+    ],
+    "49": [
+      7,
+      1
+    ],
+    "125": [
+      1,
+      2
+    ],
+    "242": [
+      6,
+      1
+    ],
+    "14": [
+      1,
+      1
+    ],
+    "28": [
+      7,
+      2
+    ],
+    "344": [
+      7,
+      1
+    ],
+    "151": [
+      8,
+      1
+    ],
+    "5": [
+      7,
+      2
+    ],
+    "76": [
+      8,
+      1
+    ],
+    "438": [
+      7,
+      1
+    ],
+    "567": [
+      8,
+      2
+    ],
+    "209": [
+      2,
+      1
+    ],
+    "239": [
+      3,
+      1
+    ],
+    "560": [
+      3,
+      2
+    ],
+    "152": [
+      9,
+      1
+    ],
+    "41": [
+      6,
+      2
+    ],
+    "31": [
+      2,
+      1
+    ],
+    "48": [
+      1,
+      1
+    ],
+    "54": [
+      4,
+      1
+    ],
+    "73": [
+      4,
+      2
+    ],
+    "36": [
+      8,
+      2
+    ],
+    "977": [
+      9,
+      1
+    ],
+    "134": [
+      3,
+      1
+    ],
+    "55": [
+      2,
+      2
+    ],
+    "45": [
+      6,
+      1
+    ],
+    "128": [
+      6,
+      2
+    ],
+    "347": [
+      5,
+      2
+    ],
+    "18": [
+      5,
+      1
+    ],
+    "16": [
+      5,
+      2
+    ],
+    "27": [
+      3,
+      2
+    ],
+    "80": [
+      3,
+      2
+    ],
+    "443": [
+      9,
+      1
+    ],
+    "394": [
+      9,
+      2
+    ],
+    "8": [
+      9,
+      2
+    ]
+  },
+  "column_heights_pt": [
+    637.0,
+    737.0,
+    727.0,
+    644.0,
+    737.0,
+    744.0,
+    730.0,
+    740.0,
+    740.0,
+    737.0,
+    744.0,
+    677.0,
+    727.0,
+    700.0,
+    730.0,
+    690.0,
+    737.0,
+    670.0
+  ],
+  "column_capacity_pt": 744.8,
+  "code_submissions_token_matched_and_compiled": 50,
+  "pdf_validation": {
+    "pages": 9,
+    "problem_descriptions": 50,
+    "constraints_sections": 50,
+    "words_checked_inside_page_bounds": 5912,
+    "overflowing_words": 0
+  },
+  "word_validation": {
+    "page_tables": 9,
+    "explicit_page_breaks": 8,
+    "visible_body_font_size_pt": 9,
+    "header_parts": 0,
+    "footer_parts": 0,
+    "page_number_fields": 0,
+    "complete_single_column_problems": 50,
+    "native_word_renderer_available": false
+  },
+  "page_problem_ids": [
+    [
+      [
+        1,
+        14,
+        48
+      ],
+      [
+        3,
+        56,
+        125
+      ]
+    ],
+    [
+      [
+        238,
+        209,
+        31
+      ],
+      [
+        53,
+        283,
+        189,
+        55
+      ]
+    ],
+    [
+      [
+        121,
+        239,
+        134
+      ],
+      [
+        26,
+        560,
+        27,
+        80
+      ]
+    ],
+    [
+      [
+        15,
+        54
+      ],
+      [
+        11,
+        73
+      ]
+    ],
+    [
+      [
+        42,
+        18
+      ],
+      [
+        88,
+        347,
+        16
+      ]
+    ],
+    [
+      [
+        75,
+        217,
+        242,
+        45
+      ],
+      [
+        169,
+        41,
+        128
+      ]
+    ],
+    [
+      [
+        49,
+        344,
+        438
+      ],
+      [
+        28,
+        5
+      ]
+    ],
+    [
+      [
+        151,
+        76
+      ],
+      [
+        567,
+        36
+      ]
+    ],
+    [
+      [
+        152,
+        977,
+        443
+      ],
+      [
+        394,
+        8
+      ]
+    ]
+  ]
+}

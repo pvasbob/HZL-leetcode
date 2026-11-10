@@ -1,0 +1,76 @@
+{
+  "categories": 12,
+  "entries": 600,
+  "distinct_problem_ids": 515,
+  "word_documents": 12,
+  "pdf_documents": 12,
+  "total_pdf_pages": 136,
+  "all_content_font_size_pt": 9,
+  "difficulty_on_every_problem": true,
+  "split_solutions": 0,
+  "compiled_token_preserved_submissions": 600,
+  "native_word_renderer_available": false,
+  "archive_crc_valid": true,
+  "categories_summary": [
+    {
+      "category": "1. Array & String",
+      "pages": 9,
+      "problems": 50
+    },
+    {
+      "category": "2. Hash Table",
+      "pages": 11,
+      "problems": 50
+    },
+    {
+      "category": "3. Linked List",
+      "pages": 12,
+      "problems": 50
+    },
+    {
+      "category": "4. Stack & Queue",
+      "pages": 12,
+      "problems": 50
+    },
+    {
+      "category": "5. Binary Tree & Bst",
+      "pages": 11,
+      "problems": 50
+    },
+    {
+      "category": "6. Graph",
+      "pages": 17,
+      "problems": 50
+    },
+    {
+      "category": "7. Binary Search",
+      "pages": 11,
+      "problems": 50
+    },
+    {
+      "category": "8. Backtracking",
+      "pages": 13,
+      "problems": 50
+    },
+    {
+      "category": "9. Dynamic Programming",
+      "pages": 10,
+      "problems": 50
+    },
+    {
+      "category": "10. Greedy Algorithms",
+      "pages": 10,
+      "problems": 50
+    },
+    {
+      "category": "11. Heap / Priority Queue",
+      "pages": 12,
+      "problems": 50
+    },
+    {
+      "category": "12. Bit Manipulation & Math",
+      "pages": 8,
+      "problems": 50
+    }
+  ]
+}

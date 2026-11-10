@@ -1,0 +1,382 @@
+{
+  "category": "9. Dynamic Programming",
+  "source": "solutions/09_dynamic_programming.md",
+  "source_sha256": "ccc0f9d06c5e3955b113770b9fdc352d87892bdc5f0b35fc838ef0a413755968",
+  "problems": 50,
+  "pages": 10,
+  "layout": "US Letter portrait, two columns",
+  "font_size_pt": 9,
+  "code_font": "Liberation Mono",
+  "body_font": "Liberation Sans",
+  "line_spacing_pt": 10,
+  "margins_inches": 0.3,
+  "gutter_inches": 0.2,
+  "difficulty_beside_every_title": true,
+  "difficulty_counts": {
+    "Easy": 3,
+    "Medium": 38,
+    "Hard": 9
+  },
+  "printed_headers": false,
+  "printed_footers": false,
+  "printed_page_numbers": false,
+  "problem_order": "repacked by size; original rank labels and LC IDs retained",
+  "page_lower_bound_for_this_typography": 9,
+  "matches_page_lower_bound": false,
+  "solutions_kept_in_one_column": 50,
+  "split_solutions": [],
+  "solution_placements": {
+    "70": [
+      1,
+      1
+    ],
+    "198": [
+      1,
+      2
+    ],
+    "322": [
+      2,
+      1
+    ],
+    "300": [
+      2,
+      2
+    ],
+    "1143": [
+      3,
+      1
+    ],
+    "72": [
+      2,
+      2
+    ],
+    "416": [
+      2,
+      1
+    ],
+    "139": [
+      3,
+      2
+    ],
+    "62": [
+      4,
+      1
+    ],
+    "64": [
+      4,
+      2
+    ],
+    "53": [
+      4,
+      1
+    ],
+    "152": [
+      5,
+      1
+    ],
+    "91": [
+      5,
+      2
+    ],
+    "746": [
+      3,
+      1
+    ],
+    "213": [
+      5,
+      1
+    ],
+    "337": [
+      5,
+      2
+    ],
+    "279": [
+      6,
+      1
+    ],
+    "377": [
+      6,
+      2
+    ],
+    "518": [
+      2,
+      1
+    ],
+    "494": [
+      3,
+      2
+    ],
+    "474": [
+      7,
+      1
+    ],
+    "1049": [
+      7,
+      2
+    ],
+    "221": [
+      5,
+      2
+    ],
+    "120": [
+      6,
+      1
+    ],
+    "931": [
+      1,
+      1
+    ],
+    "63": [
+      5,
+      1
+    ],
+    "115": [
+      7,
+      2
+    ],
+    "97": [
+      8,
+      1
+    ],
+    "5": [
+      8,
+      2
+    ],
+    "647": [
+      9,
+      1
+    ],
+    "516": [
+      6,
+      2
+    ],
+    "1312": [
+      6,
+      2
+    ],
+    "312": [
+      3,
+      1
+    ],
+    "1547": [
+      9,
+      1
+    ],
+    "1039": [
+      6,
+      1
+    ],
+    "309": [
+      7,
+      2
+    ],
+    "714": [
+      1,
+      2
+    ],
+    "123": [
+      4,
+      2
+    ],
+    "188": [
+      9,
+      2
+    ],
+    "121": [
+      1,
+      2
+    ],
+    "122": [
+      4,
+      1
+    ],
+    "55": [
+      1,
+      2
+    ],
+    "45": [
+      4,
+      2
+    ],
+    "673": [
+      10,
+      1
+    ],
+    "354": [
+      8,
+      2
+    ],
+    "1235": [
+      7,
+      1
+    ],
+    "983": [
+      9,
+      2
+    ],
+    "96": [
+      4,
+      1
+    ],
+    "95": [
+      2,
+      2
+    ],
+    "10": [
+      8,
+      1
+    ]
+  },
+  "column_heights_pt": [
+    730.0,
+    714.0,
+    737.0,
+    737.0,
+    737.0,
+    730.0,
+    594.0,
+    627.0,
+    737.0,
+    717.0,
+    707.0,
+    727.0,
+    620.0,
+    587.0,
+    660.0,
+    710.0,
+    740.0,
+    600.0,
+    613.0,
+    0.0
+  ],
+  "column_capacity_pt": 744.8,
+  "code_submissions_token_matched_and_compiled": 50,
+  "pdf_validation": {
+    "pages": 10,
+    "problem_descriptions": 50,
+    "constraints_sections": 50,
+    "words_checked_inside_page_bounds": 6849,
+    "overflowing_words": 0
+  },
+  "word_validation": {
+    "page_tables": 10,
+    "explicit_page_breaks": 9,
+    "visible_body_font_size_pt": 9,
+    "header_parts": 0,
+    "footer_parts": 0,
+    "page_number_fields": 0,
+    "complete_single_column_problems": 50,
+    "native_word_renderer_available": false
+  },
+  "page_problem_ids": [
+    [
+      [
+        70,
+        931
+      ],
+      [
+        198,
+        714,
+        121,
+        55
+      ]
+    ],
+    [
+      [
+        322,
+        416,
+        518
+      ],
+      [
+        300,
+        72,
+        95
+      ]
+    ],
+    [
+      [
+        1143,
+        746,
+        312
+      ],
+      [
+        139,
+        494
+      ]
+    ],
+    [
+      [
+        62,
+        53,
+        122,
+        96
+      ],
+      [
+        64,
+        123,
+        45
+      ]
+    ],
+    [
+      [
+        152,
+        213,
+        63
+      ],
+      [
+        91,
+        337,
+        221
+      ]
+    ],
+    [
+      [
+        279,
+        120,
+        1039
+      ],
+      [
+        377,
+        516,
+        1312
+      ]
+    ],
+    [
+      [
+        474,
+        1235
+      ],
+      [
+        1049,
+        115,
+        309
+      ]
+    ],
+    [
+      [
+        97,
+        10
+      ],
+      [
+        5,
+        354
+      ]
+    ],
+    [
+      [
+        647,
+        1547
+      ],
+      [
+        188,
+        983
+      ]
+    ],
+    [
+      [
+        673
+      ],
+      []
+    ]
+  ]
+}

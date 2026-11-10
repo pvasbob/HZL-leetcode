@@ -1,0 +1,399 @@
+{
+  "category": "4. Stack & Queue",
+  "source": "solutions/04_stack_and_queue.md",
+  "source_sha256": "8570ee121803261008f6d4a91be431d52354994b711e5f48831ac25c967a486f",
+  "problems": 50,
+  "pages": 12,
+  "layout": "US Letter portrait, two columns",
+  "font_size_pt": 9,
+  "code_font": "Liberation Mono",
+  "body_font": "Liberation Sans",
+  "line_spacing_pt": 10,
+  "margins_inches": 0.3,
+  "gutter_inches": 0.2,
+  "difficulty_beside_every_title": true,
+  "difficulty_counts": {
+    "Easy": 10,
+    "Medium": 31,
+    "Hard": 9
+  },
+  "printed_headers": false,
+  "printed_footers": false,
+  "printed_page_numbers": false,
+  "problem_order": "repacked by size; original rank labels and LC IDs retained",
+  "page_lower_bound_for_this_typography": 11,
+  "matches_page_lower_bound": false,
+  "solutions_kept_in_one_column": 50,
+  "split_solutions": [],
+  "solution_placements": {
+    "20": [
+      1,
+      1
+    ],
+    "155": [
+      1,
+      2
+    ],
+    "232": [
+      2,
+      1
+    ],
+    "225": [
+      2,
+      2
+    ],
+    "150": [
+      3,
+      1
+    ],
+    "739": [
+      3,
+      2
+    ],
+    "496": [
+      4,
+      1
+    ],
+    "503": [
+      4,
+      2
+    ],
+    "84": [
+      5,
+      1
+    ],
+    "85": [
+      3,
+      2
+    ],
+    "42": [
+      5,
+      2
+    ],
+    "394": [
+      2,
+      1
+    ],
+    "71": [
+      6,
+      1
+    ],
+    "227": [
+      6,
+      2
+    ],
+    "224": [
+      7,
+      1
+    ],
+    "32": [
+      7,
+      2
+    ],
+    "402": [
+      4,
+      2
+    ],
+    "316": [
+      8,
+      1
+    ],
+    "901": [
+      5,
+      2
+    ],
+    "853": [
+      1,
+      2
+    ],
+    "735": [
+      8,
+      2
+    ],
+    "946": [
+      6,
+      2
+    ],
+    "1047": [
+      9,
+      1
+    ],
+    "1209": [
+      9,
+      2
+    ],
+    "1249": [
+      6,
+      1
+    ],
+    "1544": [
+      10,
+      1
+    ],
+    "678": [
+      8,
+      2
+    ],
+    "921": [
+      10,
+      2
+    ],
+    "856": [
+      11,
+      1
+    ],
+    "1021": [
+      10,
+      1
+    ],
+    "933": [
+      5,
+      1
+    ],
+    "622": [
+      9,
+      1
+    ],
+    "641": [
+      11,
+      2
+    ],
+    "239": [
+      7,
+      2
+    ],
+    "1438": [
+      3,
+      1
+    ],
+    "862": [
+      12,
+      1
+    ],
+    "1696": [
+      10,
+      1
+    ],
+    "2073": [
+      5,
+      1
+    ],
+    "649": [
+      8,
+      1
+    ],
+    "1700": [
+      10,
+      2
+    ],
+    "1823": [
+      7,
+      1
+    ],
+    "950": [
+      10,
+      2
+    ],
+    "994": [
+      1,
+      1
+    ],
+    "102": [
+      12,
+      1
+    ],
+    "199": [
+      4,
+      1
+    ],
+    "542": [
+      2,
+      2
+    ],
+    "752": [
+      11,
+      1
+    ],
+    "127": [
+      12,
+      2
+    ],
+    "210": [
+      9,
+      2
+    ],
+    "2390": [
+      5,
+      2
+    ]
+  },
+  "column_heights_pt": [
+    730.0,
+    630.0,
+    730.0,
+    740.0,
+    740.0,
+    740.0,
+    610.0,
+    570.0,
+    647.0,
+    707.0,
+    730.0,
+    740.0,
+    620.0,
+    550.0,
+    670.0,
+    630.0,
+    740.0,
+    740.0,
+    737.0,
+    657.0,
+    740.0,
+    683.0,
+    590.0,
+    553.0
+  ],
+  "column_capacity_pt": 744.8,
+  "code_submissions_token_matched_and_compiled": 50,
+  "pdf_validation": {
+    "pages": 12,
+    "problem_descriptions": 50,
+    "constraints_sections": 50,
+    "words_checked_inside_page_bounds": 7029,
+    "overflowing_words": 0
+  },
+  "word_validation": {
+    "page_tables": 12,
+    "explicit_page_breaks": 11,
+    "visible_body_font_size_pt": 9,
+    "header_parts": 0,
+    "footer_parts": 0,
+    "page_number_fields": 0,
+    "complete_single_column_problems": 50,
+    "native_word_renderer_available": false
+  },
+  "page_problem_ids": [
+    [
+      [
+        20,
+        994
+      ],
+      [
+        155,
+        853
+      ]
+    ],
+    [
+      [
+        232,
+        394
+      ],
+      [
+        225,
+        542
+      ]
+    ],
+    [
+      [
+        150,
+        1438
+      ],
+      [
+        739,
+        85
+      ]
+    ],
+    [
+      [
+        496,
+        199
+      ],
+      [
+        503,
+        402
+      ]
+    ],
+    [
+      [
+        84,
+        933,
+        2073
+      ],
+      [
+        42,
+        901,
+        2390
+      ]
+    ],
+    [
+      [
+        71,
+        1249
+      ],
+      [
+        227,
+        946
+      ]
+    ],
+    [
+      [
+        224,
+        1823
+      ],
+      [
+        32,
+        239
+      ]
+    ],
+    [
+      [
+        316,
+        649
+      ],
+      [
+        735,
+        678
+      ]
+    ],
+    [
+      [
+        1047,
+        622
+      ],
+      [
+        1209,
+        210
+      ]
+    ],
+    [
+      [
+        1544,
+        1021,
+        1696
+      ],
+      [
+        921,
+        1700,
+        950
+      ]
+    ],
+    [
+      [
+        856,
+        752
+      ],
+      [
+        641
+      ]
+    ],
+    [
+      [
+        862,
+        102
+      ],
+      [
+        127
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "category": "8. Backtracking",
+  "source": "solutions/08_backtracking.md",
+  "source_sha256": "d072a4edf13fe9ecffd4473948c74cdd2ec4aa9acf6f0e9da41afc578c99dfb4",
+  "problems": 50,
+  "pages": 13,
+  "layout": "US Letter portrait, two columns",
+  "font_size_pt": 9,
+  "code_font": "Liberation Mono",
+  "body_font": "Liberation Sans",
+  "line_spacing_pt": 10,
+  "margins_inches": 0.3,
+  "gutter_inches": 0.2,
+  "difficulty_beside_every_title": true,
+  "difficulty_counts": {
+    "Easy": 1,
+    "Medium": 37,
+    "Hard": 12
+  },
+  "printed_headers": false,
+  "printed_footers": false,
+  "printed_page_numbers": false,
+  "problem_order": "repacked by size; original rank labels and LC IDs retained",
+  "page_lower_bound_for_this_typography": 13,
+  "matches_page_lower_bound": true,
+  "solutions_kept_in_one_column": 50,
+  "split_solutions": [],
+  "solution_placements": {
+    "46": [
+      1,
+      1
+    ],
+    "78": [
+      1,
+      2
+    ],
+    "39": [
+      2,
+      1
+    ],
+    "77": [
+      2,
+      2
+    ],
+    "22": [
+      3,
+      1
+    ],
+    "79": [
+      2,
+      2
+    ],
+    "51": [
+      3,
+      2
+    ],
+    "37": [
+      4,
+      1
+    ],
+    "90": [
+      4,
+      2
+    ],
+    "47": [
+      5,
+      1
+    ],
+    "40": [
+      2,
+      1
+    ],
+    "216": [
+      5,
+      2
+    ],
+    "17": [
+      6,
+      1
+    ],
+    "131": [
+      3,
+      2
+    ],
+    "93": [
+      6,
+      2
+    ],
+    "784": [
+      7,
+      1
+    ],
+    "698": [
+      5,
+      2
+    ],
+    "473": [
+      7,
+      2
+    ],
+    "526": [
+      8,
+      1
+    ],
+    "1079": [
+      8,
+      2
+    ],
+    "1239": [
+      5,
+      1
+    ],
+    "1415": [
+      1,
+      1
+    ],
+    "1593": [
+      9,
+      1
+    ],
+    "1863": [
+      3,
+      1
+    ],
+    "2044": [
+      3,
+      1
+    ],
+    "2305": [
+      7,
+      2
+    ],
+    "2597": [
+      9,
+      2
+    ],
+    "2698": [
+      6,
+      1
+    ],
+    "1980": [
+      10,
+      1
+    ],
+    "282": [
+      10,
+      1
+    ],
+    "301": [
+      10,
+      2
+    ],
+    "140": [
+      6,
+      2
+    ],
+    "212": [
+      11,
+      1
+    ],
+    "126": [
+      11,
+      2
+    ],
+    "332": [
+      9,
+      1
+    ],
+    "491": [
+      12,
+      1
+    ],
+    "842": [
+      4,
+      2
+    ],
+    "797": [
+      9,
+      2
+    ],
+    "980": [
+      1,
+      2
+    ],
+    "1219": [
+      12,
+      2
+    ],
+    "1255": [
+      8,
+      2
+    ],
+    "1601": [
+      13,
+      1
+    ],
+    "1718": [
+      12,
+      1
+    ],
+    "1849": [
+      12,
+      2
+    ],
+    "2375": [
+      8,
+      1
+    ],
+    "967": [
+      13,
+      1
+    ],
+    "306": [
+      13,
+      2
+    ],
+    "60": [
+      13,
+      2
+    ],
+    "89": [
+      4,
+      1
+    ],
+    "95": [
+      7,
+      1
+    ]
+  },
+  "column_heights_pt": [
+    610.0,
+    740.0,
+    740.0,
+    740.0,
+    667.0,
+    740.0,
+    680.0,
+    740.0,
+    740.0,
+    740.0,
+    740.0,
+    740.0,
+    560.0,
+    720.0,
+    540.0,
+    740.0,
+    710.0,
+    570.0,
+    730.0,
+    543.0,
+    703.0,
+    663.0,
+    740.0,
+    650.0,
+    740.0,
+    740.0
+  ],
+  "column_capacity_pt": 744.8,
+  "code_submissions_token_matched_and_compiled": 50,
+  "pdf_validation": {
+    "pages": 13,
+    "problem_descriptions": 50,
+    "constraints_sections": 50,
+    "words_checked_inside_page_bounds": 8290,
+    "overflowing_words": 0
+  },
+  "word_validation": {
+    "page_tables": 13,
+    "explicit_page_breaks": 12,
+    "visible_body_font_size_pt": 9,
+    "header_parts": 0,
+    "footer_parts": 0,
+    "page_number_fields": 0,
+    "complete_single_column_problems": 50,
+    "native_word_renderer_available": false
+  },
+  "page_problem_ids": [
+    [
+      [
+        46,
+        1415
+      ],
+      [
+        78,
+        980
+      ]
+    ],
+    [
+      [
+        39,
+        40
+      ],
+      [
+        77,
+        79
+      ]
+    ],
+    [
+      [
+        22,
+        1863,
+        2044
+      ],
+      [
+        51,
+        131
+      ]
+    ],
+    [
+      [
+        37,
+        89
+      ],
+      [
+        90,
+        842
+      ]
+    ],
+    [
+      [
+        47,
+        1239
+      ],
+      [
+        216,
+        698
+      ]
+    ],
+    [
+      [
+        17,
+        2698
+      ],
+      [
+        93,
+        140
+      ]
+    ],
+    [
+      [
+        784,
+        95
+      ],
+      [
+        473,
+        2305
+      ]
+    ],
+    [
+      [
+        526,
+        2375
+      ],
+      [
+        1079,
+        1255
+      ]
+    ],
+    [
+      [
+        1593,
+        332
+      ],
+      [
+        2597,
+        797
+      ]
+    ],
+    [
+      [
+        1980,
+        282
+      ],
+      [
+        301
+      ]
+    ],
+    [
+      [
+        212
+      ],
+      [
+        126
+      ]
+    ],
+    [
+      [
+        491,
+        1718
+      ],
+      [
+        1219,
+        1849
+      ]
+    ],
+    [
+      [
+        1601,
+        967
+      ],
+      [
+        306,
+        60
+      ]
+    ]
+  ]
+}

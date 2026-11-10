@@ -1,0 +1,367 @@
+{
+  "category": "12. Bit Manipulation & Math",
+  "source": "solutions/12_bit_manipulation_and_math.md",
+  "source_sha256": "e74cca306a86e4c268f598fdd95d35797b40426f05eeb58e4869ed7ce2f00a9c",
+  "problems": 50,
+  "pages": 8,
+  "layout": "US Letter portrait, two columns",
+  "font_size_pt": 9,
+  "code_font": "Liberation Mono",
+  "body_font": "Liberation Sans",
+  "line_spacing_pt": 10,
+  "margins_inches": 0.3,
+  "gutter_inches": 0.2,
+  "difficulty_beside_every_title": true,
+  "difficulty_counts": {
+    "Easy": 23,
+    "Medium": 26,
+    "Hard": 1
+  },
+  "printed_headers": false,
+  "printed_footers": false,
+  "printed_page_numbers": false,
+  "problem_order": "repacked by size; original rank labels and LC IDs retained",
+  "page_lower_bound_for_this_typography": 8,
+  "matches_page_lower_bound": true,
+  "solutions_kept_in_one_column": 50,
+  "split_solutions": [],
+  "solution_placements": {
+    "136": [
+      1,
+      1
+    ],
+    "191": [
+      1,
+      2
+    ],
+    "338": [
+      2,
+      1
+    ],
+    "190": [
+      2,
+      2
+    ],
+    "268": [
+      3,
+      1
+    ],
+    "371": [
+      3,
+      2
+    ],
+    "201": [
+      4,
+      1
+    ],
+    "231": [
+      4,
+      1
+    ],
+    "342": [
+      4,
+      2
+    ],
+    "326": [
+      4,
+      1
+    ],
+    "461": [
+      2,
+      2
+    ],
+    "477": [
+      5,
+      1
+    ],
+    "137": [
+      5,
+      2
+    ],
+    "260": [
+      1,
+      1
+    ],
+    "287": [
+      6,
+      1
+    ],
+    "29": [
+      6,
+      2
+    ],
+    "7": [
+      6,
+      1
+    ],
+    "9": [
+      3,
+      1
+    ],
+    "50": [
+      5,
+      1
+    ],
+    "69": [
+      5,
+      1
+    ],
+    "204": [
+      4,
+      2
+    ],
+    "202": [
+      4,
+      2
+    ],
+    "172": [
+      3,
+      2
+    ],
+    "66": [
+      6,
+      1
+    ],
+    "67": [
+      5,
+      2
+    ],
+    "43": [
+      7,
+      1
+    ],
+    "415": [
+      1,
+      2
+    ],
+    "989": [
+      7,
+      2
+    ],
+    "8": [
+      8,
+      1
+    ],
+    "13": [
+      8,
+      1
+    ],
+    "12": [
+      7,
+      2
+    ],
+    "168": [
+      4,
+      2
+    ],
+    "171": [
+      2,
+      1
+    ],
+    "118": [
+      5,
+      2
+    ],
+    "119": [
+      3,
+      1
+    ],
+    "62": [
+      4,
+      1
+    ],
+    "96": [
+      4,
+      1
+    ],
+    "89": [
+      3,
+      2
+    ],
+    "78": [
+      8,
+      2
+    ],
+    "1863": [
+      3,
+      2
+    ],
+    "1318": [
+      2,
+      1
+    ],
+    "2220": [
+      2,
+      2
+    ],
+    "2433": [
+      3,
+      1
+    ],
+    "1442": [
+      2,
+      2
+    ],
+    "1310": [
+      7,
+      2
+    ],
+    "421": [
+      8,
+      2
+    ],
+    "2013": [
+      7,
+      1
+    ],
+    "149": [
+      1,
+      1
+    ],
+    "223": [
+      2,
+      1
+    ],
+    "593": [
+      6,
+      2
+    ]
+  },
+  "column_heights_pt": [
+    737.0,
+    600.0,
+    744.0,
+    624.0,
+    704.0,
+    634.0,
+    671.0,
+    724.0,
+    677.0,
+    667.0,
+    647.0,
+    660.0,
+    720.0,
+    727.0,
+    610.0,
+    730.0
+  ],
+  "column_capacity_pt": 744.8,
+  "code_submissions_token_matched_and_compiled": 50,
+  "pdf_validation": {
+    "pages": 8,
+    "problem_descriptions": 50,
+    "constraints_sections": 50,
+    "words_checked_inside_page_bounds": 5774,
+    "overflowing_words": 0
+  },
+  "word_validation": {
+    "page_tables": 8,
+    "explicit_page_breaks": 7,
+    "visible_body_font_size_pt": 9,
+    "header_parts": 0,
+    "footer_parts": 0,
+    "page_number_fields": 0,
+    "complete_single_column_problems": 50,
+    "native_word_renderer_available": false
+  },
+  "page_problem_ids": [
+    [
+      [
+        136,
+        260,
+        149
+      ],
+      [
+        191,
+        415
+      ]
+    ],
+    [
+      [
+        338,
+        171,
+        1318,
+        223
+      ],
+      [
+        190,
+        461,
+        2220,
+        1442
+      ]
+    ],
+    [
+      [
+        268,
+        9,
+        119,
+        2433
+      ],
+      [
+        371,
+        172,
+        89,
+        1863
+      ]
+    ],
+    [
+      [
+        201,
+        231,
+        326,
+        62,
+        96
+      ],
+      [
+        342,
+        204,
+        202,
+        168
+      ]
+    ],
+    [
+      [
+        477,
+        50,
+        69
+      ],
+      [
+        137,
+        67,
+        118
+      ]
+    ],
+    [
+      [
+        287,
+        7,
+        66
+      ],
+      [
+        29,
+        593
+      ]
+    ],
+    [
+      [
+        43,
+        2013
+      ],
+      [
+        989,
+        12,
+        1310
+      ]
+    ],
+    [
+      [
+        8,
+        13
+      ],
+      [
+        78,
+        421
+      ]
+    ]
+  ]
+}

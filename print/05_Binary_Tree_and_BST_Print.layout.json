@@ -1,0 +1,390 @@
+{
+  "category": "5. Binary Tree & Bst",
+  "source": "solutions/05_binary_tree_and_bst.md",
+  "source_sha256": "4a40bbeb431824a66928ddc8f8d43aec3e562064b8e5abc7db4e07851dbebac6",
+  "problems": 50,
+  "pages": 11,
+  "layout": "US Letter portrait, two columns",
+  "font_size_pt": 9,
+  "code_font": "Liberation Mono",
+  "body_font": "Liberation Sans",
+  "line_spacing_pt": 10,
+  "margins_inches": 0.3,
+  "gutter_inches": 0.2,
+  "difficulty_beside_every_title": true,
+  "difficulty_counts": {
+    "Easy": 23,
+    "Medium": 24,
+    "Hard": 3
+  },
+  "printed_headers": false,
+  "printed_footers": false,
+  "printed_page_numbers": false,
+  "problem_order": "repacked by size; original rank labels and LC IDs retained",
+  "page_lower_bound_for_this_typography": 10,
+  "matches_page_lower_bound": false,
+  "solutions_kept_in_one_column": 50,
+  "split_solutions": [],
+  "solution_placements": {
+    "104": [
+      1,
+      1
+    ],
+    "94": [
+      1,
+      2
+    ],
+    "98": [
+      2,
+      1
+    ],
+    "102": [
+      2,
+      2
+    ],
+    "226": [
+      3,
+      1
+    ],
+    "100": [
+      3,
+      2
+    ],
+    "101": [
+      4,
+      1
+    ],
+    "543": [
+      4,
+      2
+    ],
+    "110": [
+      5,
+      1
+    ],
+    "112": [
+      5,
+      1
+    ],
+    "113": [
+      5,
+      2
+    ],
+    "124": [
+      4,
+      1
+    ],
+    "235": [
+      3,
+      2
+    ],
+    "236": [
+      1,
+      1
+    ],
+    "230": [
+      6,
+      1
+    ],
+    "105": [
+      6,
+      2
+    ],
+    "106": [
+      6,
+      2
+    ],
+    "297": [
+      3,
+      1
+    ],
+    "108": [
+      7,
+      1
+    ],
+    "700": [
+      7,
+      2
+    ],
+    "701": [
+      7,
+      2
+    ],
+    "450": [
+      5,
+      2
+    ],
+    "95": [
+      1,
+      1
+    ],
+    "96": [
+      2,
+      2
+    ],
+    "144": [
+      1,
+      2
+    ],
+    "145": [
+      8,
+      1
+    ],
+    "199": [
+      8,
+      2
+    ],
+    "103": [
+      9,
+      1
+    ],
+    "111": [
+      9,
+      2
+    ],
+    "257": [
+      10,
+      1
+    ],
+    "129": [
+      6,
+      1
+    ],
+    "437": [
+      2,
+      2
+    ],
+    "572": [
+      10,
+      2
+    ],
+    "617": [
+      7,
+      1
+    ],
+    "637": [
+      8,
+      2
+    ],
+    "662": [
+      9,
+      1
+    ],
+    "654": [
+      2,
+      1
+    ],
+    "669": [
+      7,
+      1
+    ],
+    "783": [
+      10,
+      2
+    ],
+    "938": [
+      11,
+      1
+    ],
+    "987": [
+      10,
+      1
+    ],
+    "1026": [
+      3,
+      2
+    ],
+    "114": [
+      4,
+      1
+    ],
+    "116": [
+      7,
+      2
+    ],
+    "173": [
+      11,
+      1
+    ],
+    "222": [
+      8,
+      1
+    ],
+    "337": [
+      5,
+      1
+    ],
+    "404": [
+      6,
+      1
+    ],
+    "508": [
+      4,
+      2
+    ],
+    "863": [
+      9,
+      2
+    ]
+  },
+  "column_heights_pt": [
+    727.0,
+    650.0,
+    620.0,
+    737.0,
+    730.0,
+    737.0,
+    737.0,
+    740.0,
+    687.0,
+    610.0,
+    727.0,
+    730.0,
+    657.0,
+    727.0,
+    650.0,
+    610.0,
+    720.0,
+    740.0,
+    740.0,
+    740.0,
+    590.0,
+    0.0
+  ],
+  "column_capacity_pt": 744.8,
+  "code_submissions_token_matched_and_compiled": 50,
+  "pdf_validation": {
+    "pages": 11,
+    "problem_descriptions": 50,
+    "constraints_sections": 50,
+    "words_checked_inside_page_bounds": 6762,
+    "overflowing_words": 0
+  },
+  "word_validation": {
+    "page_tables": 11,
+    "explicit_page_breaks": 10,
+    "visible_body_font_size_pt": 9,
+    "header_parts": 0,
+    "footer_parts": 0,
+    "page_number_fields": 0,
+    "complete_single_column_problems": 50,
+    "native_word_renderer_available": false
+  },
+  "page_problem_ids": [
+    [
+      [
+        104,
+        236,
+        95
+      ],
+      [
+        94,
+        144
+      ]
+    ],
+    [
+      [
+        98,
+        654
+      ],
+      [
+        102,
+        96,
+        437
+      ]
+    ],
+    [
+      [
+        226,
+        297
+      ],
+      [
+        100,
+        235,
+        1026
+      ]
+    ],
+    [
+      [
+        101,
+        124,
+        114
+      ],
+      [
+        543,
+        508
+      ]
+    ],
+    [
+      [
+        110,
+        112,
+        337
+      ],
+      [
+        113,
+        450
+      ]
+    ],
+    [
+      [
+        230,
+        129,
+        404
+      ],
+      [
+        105,
+        106
+      ]
+    ],
+    [
+      [
+        108,
+        617,
+        669
+      ],
+      [
+        700,
+        701,
+        116
+      ]
+    ],
+    [
+      [
+        145,
+        222
+      ],
+      [
+        199,
+        637
+      ]
+    ],
+    [
+      [
+        103,
+        662
+      ],
+      [
+        111,
+        863
+      ]
+    ],
+    [
+      [
+        257,
+        987
+      ],
+      [
+        572,
+        783
+      ]
+    ],
+    [
+      [
+        938,
+        173
+      ],
+      []
+    ]
+  ]
+}
