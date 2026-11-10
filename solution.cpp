@@ -152,7 +152,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-// Recursive DFS
+// 94 Recursive DFS
 class Solution {
 public:
     std::vector<int> inorderTraversal(TreeNode* root) {
@@ -278,6 +278,106 @@ public:
             stack.pop();
 
             current = current->right;
+        }
+
+        return result;
+    }
+};
+
+// Binary Tree postorder Traversal recusive
+
+class Solution {
+public:
+    std::vector<int> postorderTraversal(TreeNode* root) {
+        std::vector<int> result;
+        postorder(root, result);
+        return result;
+    }
+
+private:
+    void postorder(TreeNode* node, std::vector<int>& result) {
+        if (node == nullptr) {
+            return;
+        }
+
+        postorder(node->left, result);   // Left
+        postorder(node->right, result);  // Right
+        result.push_back(node->val);     // Root
+    }
+};
+
+// Binary Tree postorder Traversal iterative: two stacks
+
+class Solution {
+public:
+    std::vector<int> postorderTraversal(TreeNode* root) {
+        std::vector<int> result;
+
+        if (root == nullptr) {
+            return result;
+        }
+
+        std::stack<TreeNode*> stack1;
+        std::stack<TreeNode*> stack2;
+
+        stack1.push(root);
+
+        while (!stack1.empty()) {
+            TreeNode* current = stack1.top();
+            stack1.pop();
+
+            stack2.push(current);
+
+            if (current->left != nullptr) {
+                stack1.push(current->left);
+            }
+
+            if (current->right != nullptr) {
+                stack1.push(current->right);
+            }
+        }
+
+        while (!stack2.empty()) {
+            result.push_back(stack2.top()->val);
+            stack2.pop();
+        }
+
+        return result;
+    }
+};
+
+// Binary Tree postorder Traversal iterative: One stacks
+
+
+class Solution {
+public:
+    std::vector<int> postorderTraversal(TreeNode* root) {
+        std::vector<int> result;
+        std::stack<TreeNode*> stack;
+
+        TreeNode* current = root;
+        TreeNode* lastVisited = nullptr;
+
+        while (current != nullptr || !stack.empty()) {
+
+            while (current != nullptr) {
+                stack.push(current);
+                current = current->left;
+            }
+
+            TreeNode* node = stack.top();
+
+            if (node->right != nullptr &&
+                lastVisited != node->right) {
+
+                current = node->right;
+
+            } else {
+
+                result.push_back(node->val);
+                lastVisited = node;
+                stack.pop();
+            }
         }
 
         return result;

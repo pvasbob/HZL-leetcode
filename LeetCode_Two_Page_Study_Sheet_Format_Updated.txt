@@ -1,0 +1,80 @@
+LEETCODE TWO-PAGE STUDY SHEET — FORMAT & WORKFLOW STANDARD
+Version: October 2026 — Updated code typography (10 pt / 1.20 line spacing)
+Purpose: Paste/upload this file in a new ChatGPT conversation to continue producing consistent LeetCode review documents.
+
+CORE DELIVERABLE
+For each LeetCode problem I provide (possibly with my own C++ solution), create ONE Microsoft Word .docx study sheet containing EXACTLY TWO pages, intended for double-sided printing (front and back). Make effective use of BOTH pages without excessive blank space. Use clear, professional formatting and readable code with generous line spacing. Provide a working download link to the generated .docx. If the download fails, offer a ZIP copy containing the document.
+
+PAGE 1 (FRONT): STAGE 1 + STAGE 2 — NO WORKED EXAMPLES
+Stage 1 — Understand the Problem:
+- LeetCode number, title, difficulty, and official problem URL.
+- Concise but accurate problem statement: inputs, outputs, and requirements.
+- Official constraints and their practical implications (algorithm choice, time/space, overflow).
+- Primary and relevant secondary categories (12-category framework below), with reasons.
+- Critical points: essential observations, invariants, pitfalls, edge cases.
+- If I provide a solution, assess correctness, strengths, weaknesses, and complexity; retain it if already optimal.
+
+Stage 2 — Best Optimized Solution:
+- Complete, compilable, optimized C++ solution (C++20 by default; C++23 when useful; C++17 if appropriate; never C++26).
+- Core algorithmic idea, invariants, and why it works.
+- Data structures and their purposes.
+- Time complexity and AUXILIARY space complexity, including recursion stack when relevant.
+- Important optimizations/tradeoffs; mention meaningful alternatives briefly if space permits.
+- Prefer standard library facilities and production-quality clarity; avoid gratuitous language features.
+
+IMPORTANT: Page 1 must contain NO worked examples, execution traces, or example diagrams.
+
+PAGE 2 (BACK): REPEAT SOLUTION + EXPLAINING EXAMPLES
+- Repeat the COMPLETE optimized C++ solution, with readable indentation and increased code line spacing (1.20 line spacing).
+- Include worked examples explaining the solution step by step, showing intermediate state changes, variable/bound updates, and final result.
+- For binary trees, show the ACTUAL TREE STRUCTURE (ASCII/monospace diagram or clear drawn diagram), not only LeetCode level-order array notation. Show both representations where useful.
+- Likewise, visualize linked lists, graphs, and other structures whenever that helps understanding.
+- Prefer at least one nontrivial example; when useful, show both a valid and an invalid case (e.g., BST validation).
+- Conclude with concise takeaways/common pitfalls if room permits.
+- Fill the second page effectively, but do not crowd or shrink text to unreadable sizes.
+
+LAYOUT AND QUALITY REQUIREMENTS
+- EXACTLY two pages total, with an explicit page break between front and back.
+- Each page should be substantially utilized; avoid large unused areas.
+- Keep typography, section hierarchy, margins, and spacing consistent.
+- CODE TYPOGRAPHY STANDARD: 10 pt monospace font (e.g., Consolas or Liberation Mono), 1.20 line spacing, consistent indentation and preserved blank lines where meaningful. Apply to ALL code blocks on BOTH pages.
+- Do not silently revert to 8 pt, 9 pt, or 12 pt code. Keep 10 pt unless I explicitly request a change.
+- Code must remain complete and legible; maintain syntax, indentation, and comfortable line spacing.
+- Balance compactness with clarity; prefer useful explanation over decorative whitespace.
+- Verify the DOCX renders as exactly two pages before delivering when rendering tools are available.
+- Use a descriptive filename, e.g. LC_98_Validate_Binary_Search_Tree_Two_Page.docx.
+- Deliver the file itself, not merely the text of the study sheet.
+
+WORKFLOW AND INTERACTION
+- This document-generation request explicitly COMBINES Stage 1 and Stage 2 in one deliverable; do NOT wait for a separate 'next' command.
+- Do not add Stages 3, 4, or 5.
+- If I supply a C++ solution, analyze it rather than replacing it automatically. If optimal, preserve it; otherwise show the best solution and explain the improvement.
+- Optimize for correctness, asymptotic efficiency, practical performance, and understanding, not memorization.
+- When multiple equally optimal approaches exist, include meaningful distinctions if space allows, but do not overload the pages.
+- I may ask follow-up questions or formatting adjustments; retain this two-page format unless I explicitly change it.
+
+12-CATEGORY CLASSIFICATION
+1. Array & String
+2. Hash Table
+3. Linked List
+4. Stack & Queue
+5. Binary Tree & BST
+6. Graph
+7. Binary Search
+8. Backtracking
+9. Dynamic Programming
+10. Greedy Algorithms
+11. Heap / Priority Queue
+12. Bit Manipulation & Math
+
+REFERENCE FORMATTING: LEETCODE 144 — PREORDER TRAVERSAL (RECURSIVE)
+- The approved version uses 10 pt code and 1.20 line spacing on both pages.
+- Reference file: LeetCode_144_Preorder_Recursive_10pt_Spaced.docx.
+
+REFERENCE EXAMPLE: LEETCODE 98 — VALIDATE BINARY SEARCH TREE
+- Page 1: requirements/constraints, BST ancestor-bound invariant, edge cases, evaluation of provided recursive bound-checking solution, full C++ implementation, O(n) time and O(h) auxiliary recursion stack.
+- Page 2: full implementation repeated; invalid tree [5,1,4,null,null,3,6] shown as a TREE and explained through propagated bounds; also a valid BST tree with bounds traced.
+- Important insight: compare each node against constraints inherited from ALL ancestors, not only its parent; strict inequality disallows duplicates.
+
+INSTRUCTION TO A NEW CHAT
+Please follow this file as the definitive format specification. When I paste a LeetCode problem and optionally my solution, immediately generate its TWO-PAGE .docx study sheet according to these rules and provide a downloadable file.

@@ -1,0 +1,146 @@
+[
+  {
+    "id": 5,
+    "body": "\nmt19937 rng(7); Solution solver;\nfor (int trial=0; trial<1000; ++trial) {\n    string s; for(int n=rng()%30;n--;)s+=char('a'+rng()%4);\n    int best=0;\n    for(int i=0;i<(int)s.size();++i)for(int j=i;j<(int)s.size();++j){\n        bool ok=true;for(int l=i,r=j;l<r;++l,--r)if(s[l]!=s[r])ok=false;\n        if(ok)best=max(best,j-i+1);\n    }\n    string answer=solver.longestPalindrome(s),reverse=answer;ranges::reverse(reverse);\n    if(answer!=reverse || (int)answer.size()!=best || s.find(answer)==string::npos)throw runtime_error(\"palindrome oracle\");\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 647,
+    "body": "\nmt19937 rng(8); Solution solver;\nfor(int trial=0;trial<1000;++trial){\n string s;for(int n=1+rng()%25;n--;)s+=char('a'+rng()%3);\n int count=0;for(int i=0;i<(int)s.size();++i)for(int j=i;j<(int)s.size();++j){bool ok=true;for(int l=i,r=j;l<r;++l,--r)if(s[l]!=s[r])ok=false;count+=ok;}\n if(solver.countSubstrings(s)!=count)throw runtime_error(\"palindrome count oracle\");\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 1547,
+    "body": "\nmt19937 rng(9);Solution solver;\nfor(int trial=0;trial<1000;++trial){\n int length=3+rng()%100;vector<int> positions;\n for(int j=1;j<length;++j)positions.push_back(j);\n shuffle(positions.begin(),positions.end(),rng);positions.resize(min<int>(positions.size(),rng()%10));\n auto cuts=positions;positions.push_back(0);positions.push_back(length);ranges::sort(positions);int n=positions.size();\n vector<vector<int>> dp(n,vector<int>(n));\n for(int gap=2;gap<n;++gap)for(int i=0;i+gap<n;++i){int j=i+gap;dp[i][j]=INT_MAX;for(int k=i+1;k<j;++k)dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]+positions[j]-positions[i]);}\n if(solver.minCost(length,cuts)!=dp[0][n-1])throw runtime_error(\"Knuth versus cubic DP\");\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 406,
+    "body": "\nmt19937 rng(10);Solution solver;\nfor(int trial=0;trial<1000;++trial){\n int n=1+rng()%40;vector<vector<int>> people;\n for(int i=0;i<n;++i){int h=1+rng()%10,k=0;for(auto& p:people)k+=p[0]>=h;people.push_back({h,k});}\n shuffle(people.begin(),people.end(),rng);auto original=people;auto answer=solver.reconstructQueue(people);\n auto sorted=answer;ranges::sort(sorted);ranges::sort(original);if(sorted!=original)throw runtime_error(\"queue permutation\");\n for(int i=0;i<n;++i){int k=0;for(int j=0;j<i;++j)k+=answer[j][0]>=answer[i][0];if(k!=answer[i][1])throw runtime_error(\"queue rank\");}\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 2597,
+    "body": "\nmt19937 rng(11);Solution solver;\nfor(int trial=0;trial<1000;++trial){\n int n=1+rng()%11,k=1+rng()%6;vector<int>a(n);for(int&x:a)x=1+rng()%20;int expected=0;\n for(int mask=1;mask<(1<<n);++mask){bool ok=true;for(int i=0;i<n;++i)for(int j=i+1;j<n;++j)if((mask>>i&1)&&(mask>>j&1)&&abs(a[i]-a[j])==k)ok=false;expected+=ok;}\n if(solver.beautifulSubsets(a,k)!=expected)throw runtime_error(\"beautiful subsets oracle\");\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 2233,
+    "body": "\nmt19937 rng(12);Solution solver;\nfor(int trial=0;trial<1000;++trial){\n vector<int>a(1+rng()%20);for(int&x:a)x=rng()%20;int k=rng()%200;\n priority_queue<int,vector<int>,greater<int>>heap(a.begin(),a.end());for(int i=0;i<k;++i){int x=heap.top();heap.pop();heap.push(x+1);}\n long long expected=1;while(!heap.empty()){expected=expected*heap.top()%1000000007;heap.pop();}\n if(solver.maximumProduct(a,k)!=expected)throw runtime_error(\"product leveling oracle\");\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 1442,
+    "body": "\nmt19937 rng(13);Solution solver;\nfor(int trial=0;trial<1000;++trial){vector<int>a(1+rng()%20);for(int&x:a)x=rng()%16;int count=0;\n for(int i=0;i<(int)a.size();++i)for(int j=i+1;j<(int)a.size();++j)for(int k=j;k<(int)a.size();++k){int x=0,y=0;for(int p=i;p<j;++p)x^=a[p];for(int p=j;p<=k;++p)y^=a[p];count+=x==y;}\n if(solver.countTriplets(a)!=count)throw runtime_error(\"xor triplets oracle\");}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 146,
+    "body": "\nmt19937 rng(14);\nfor(int capacity=0;capacity<=6;++capacity){LRUCache cache(capacity);vector<pair<int,int>> recent;\n for(int step=0;step<5000;++step){int key=rng()%12;auto it=find_if(recent.begin(),recent.end(),[&](auto x){return x.first==key;});\n if(rng()%2){int expected=it==recent.end()?-1:it->second;if(cache.get(key)!=expected)throw runtime_error(\"LRU get\");if(it!=recent.end()){auto entry=*it;recent.erase(it);recent.insert(recent.begin(),entry);}}\n else {int value=rng()%1000;cache.put(key,value);if(it!=recent.end())recent.erase(it);if(capacity){recent.insert(recent.begin(),{key,value});if((int)recent.size()>capacity)recent.pop_back();}}}\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 460,
+    "body": "\nmt19937 rng(15);\nfor(int capacity=0;capacity<=6;++capacity){LFUCache cache(capacity);map<int,tuple<int,int,int>> reference;int clock=0;\n for(int step=0;step<5000;++step){++clock;int key=rng()%12;\n if(rng()%2){auto it=reference.find(key);int expected=it==reference.end()?-1:get<0>(it->second);if(cache.get(key)!=expected)throw runtime_error(\"LFU get\");if(it!=reference.end()){++get<1>(it->second);get<2>(it->second)=clock;}}\n else {int value=rng()%1000;cache.put(key,value);if(!capacity)continue;auto it=reference.find(key);\n if(it!=reference.end()){get<0>(it->second)=value;++get<1>(it->second);get<2>(it->second)=clock;}\n else {if((int)reference.size()==capacity){auto victim=reference.begin();for(auto x=reference.begin();x!=reference.end();++x)if(pair{get<1>(x->second),get<2>(x->second)}<pair{get<1>(victim->second),get<2>(victim->second)})victim=x;reference.erase(victim);}reference[key]={value,1,clock};}}}\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 707,
+    "body": "\nmt19937 rng(16);MyLinkedList list;vector<int> reference;\nfor(int step=0;step<20000;++step){int op=rng()%6,index=int(rng()%(reference.size()+4))-1,value=rng()%1000;\n if(op==0){list.addAtHead(value);reference.insert(reference.begin(),value);}\n if(op==1){list.addAtTail(value);reference.push_back(value);}\n if(op==2){list.addAtIndex(index,value);index=max(index,0);if(index<=(int)reference.size())reference.insert(reference.begin()+index,value);}\n if(op==3){list.deleteAtIndex(index);if(index>=0&&index<(int)reference.size())reference.erase(reference.begin()+index);}\n if(op>=4){int expected=index>=0&&index<(int)reference.size()?reference[index]:-1;if(list.get(index)!=expected)throw runtime_error(\"design linked list\");}\n}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 1192,
+    "body": "\nmt19937 rng(17);Solution solver;\nfor(int trial=0;trial<500;++trial){int n=2+rng()%10;vector<vector<int>> edges;for(int v=1;v<n;++v)edges.push_back({v,int(rng()%v)});\n for(int a=0;a<n;++a)for(int b=a+1;b<n;++b)if(rng()%5==0&&none_of(edges.begin(),edges.end(),[&](auto e){return(e[0]==a&&e[1]==b)||(e[0]==b&&e[1]==a);}))edges.push_back({a,b});\n set<pair<int,int>> expected,actual;\n for(int removed=0;removed<(int)edges.size();++removed){vector<vector<int>>g(n);for(int e=0;e<(int)edges.size();++e)if(e!=removed){g[edges[e][0]].push_back(edges[e][1]);g[edges[e][1]].push_back(edges[e][0]);}vector<bool>seen(n);vector<int>stack{0};seen[0]=true;while(!stack.empty()){int u=stack.back();stack.pop_back();for(int v:g[u])if(!seen[v]){seen[v]=true;stack.push_back(v);}}if(count(seen.begin(),seen.end(),true)!=n)expected.emplace(min(edges[removed][0],edges[removed][1]),max(edges[removed][0],edges[removed][1]));}\n for(auto edge:solver.criticalConnections(n,edges))actual.emplace(min(edge[0],edge[1]),max(edge[0],edge[1]));if(actual!=expected)throw runtime_error(\"bridge deletion oracle\");}\nint n=100000;vector<vector<int>>chain;for(int i=1;i<n;++i)chain.push_back({i-1,i});if(solver.criticalConnections(n,chain).size()!=size_t(n-1))throw runtime_error(\"deep bridge chain\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 148,
+    "body": "\nmt19937 rng(18);Solution solver;\nfor(int trial=0;trial<1000;++trial){vector<int>a(rng()%100);for(int&x:a)x=int(rng()%100)-50;ListNode dummy;auto tail=&dummy;for(int x:a){tail->next=new ListNode(x);tail=tail->next;}auto answer=solver.sortList(dummy.next);ranges::sort(a);if(listValues(answer)!=a)throw runtime_error(\"bottom-up list sort\");while(answer){auto next=answer->next;delete answer;answer=next;}}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 115,
+    "body": "\nSolution solver;\nif(solver.numDistinct(string(1000,'a'),string(500,'a')+\"b\")!=0)throw runtime_error(\"unused prefix overflow\");\nif(solver.numDistinct(\"rabbbit\",\"rabbit\")!=3)throw runtime_error(\"subsequence count\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 63,
+    "body": "\nSolution solver;vector<vector<int>>grid(100,vector<int>(100));grid.back().back()=1;\nif(solver.uniquePathsWithObstacles(grid)!=0)throw runtime_error(\"dead-end path counts\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 518,
+    "body": "\nSolution solver;vector<int>coins;for(int i=2;i<=100;i+=2)coins.push_back(i);\nif(solver.change(4999,coins)!=0)throw runtime_error(\"irrelevant overflowing combinations\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 264,
+    "body": "\nSolution solver;if(solver.nthUglyNumber(1690)!=2123366400)throw runtime_error(\"ugly candidate overflow\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 306,
+    "body": "\nSolution solver;\nif(!solver.isAdditiveNumber(\"199100199\"))throw runtime_error(\"additive sequence\");\nif(!solver.isAdditiveNumber(string(11,'1')+string(11,'1')+string(11,'2')))throw runtime_error(\"long additive terms\");\nif(solver.isAdditiveNumber(\"1023\"))throw runtime_error(\"leading zero additive\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 108,
+    "body": "\nSolution solver;\nfor(int n=0;n<=100;++n){vector<int>values(n);iota(values.begin(),values.end(),-50);auto root=solver.sortedArrayToBST(values);vector<int>inorder;\nauto inspect=[&](auto&&self,TreeNode* node)->int{if(!node)return 0;int l=self(self,node->left);inorder.push_back(node->val);int r=self(self,node->right);if(abs(l-r)>1)throw runtime_error(\"unbalanced BST\");return 1+max(l,r);};inspect(inspect,root);if(inorder!=values)throw runtime_error(\"BST contents\");}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 380,
+    "body": "\nRandomizedSet set;if(!set.insert(1)||set.insert(1)||!set.insert(2)||set.remove(3)||!set.remove(1)||set.getRandom()!=2)throw runtime_error(\"randomized set membership\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 528,
+    "body": "\nvector<int>w{1};Solution solver(w);for(int i=0;i<100;++i)if(solver.pickIndex()!=0)throw runtime_error(\"weighted singleton\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 355,
+    "body": "\nTwitter twitter;twitter.postTweet(1,5);if(twitter.getNewsFeed(1)!=vector<int>{5})throw runtime_error(\"twitter own feed\");twitter.follow(1,2);twitter.postTweet(2,6);if(twitter.getNewsFeed(1)!=vector<int>{6,5})throw runtime_error(\"twitter following\");twitter.unfollow(1,2);if(twitter.getNewsFeed(1)!=vector<int>{5})throw runtime_error(\"twitter unfollow\");twitter.follow(1,1);if(twitter.getNewsFeed(1)!=vector<int>{5})throw runtime_error(\"twitter self duplicate\");\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 451,
+    "body": "\nSolution solver;\nfor(string input:{string(\"Aabb\"),string(\"tree\"),string(\"cccaaa\")}){string result=solver.frequencySort(input);auto a=input,b=result;ranges::sort(a);ranges::sort(b);if(a!=b)throw runtime_error(\"frequency permutation\");array<int,256>counts{};for(unsigned char c:input)++counts[c];int last=INT_MAX;array<bool,256>seen{};for(size_t i=0;i<result.size();){unsigned char c=result[i];if(seen[c]||counts[c]>last)throw runtime_error(\"frequency ordering\");seen[c]=true;last=counts[c];size_t j=i;while(j<result.size()&&result[j]==result[i])++j;if(int(j-i)!=counts[c])throw runtime_error(\"frequency block\");i=j;}}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 2462,
+    "body": "\nSolution solver;mt19937 rng(19);\nfor(int trial=0;trial<1000;++trial){int n=1+rng()%30,k=1+rng()%n,c=1+rng()%n;vector<int>costs(n);for(int&x:costs)x=1+rng()%30;vector<pair<int,int>>remaining;for(int i=0;i<n;++i)remaining.emplace_back(costs[i],i);long long expected=0;\nfor(int h=0;h<k;++h){int best=-1;for(int j=0;j<(int)remaining.size();++j)if(j<c||j>=(int)remaining.size()-c)if(best==-1||remaining[j]<remaining[best])best=j;expected+=remaining[best].first;remaining.erase(remaining.begin()+best);}if(solver.totalCost(costs,k,c)!=expected)throw runtime_error(\"worker selection oracle\");}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  },
+  {
+    "id": 1696,
+    "body": "\nSolution solver;mt19937 rng(20);\nfor(int trial=0;trial<1000;++trial){int n=1+rng()%100,k=1+rng()%n;vector<int>a(n),dp(n,INT_MIN);for(int&x:a)x=int(rng()%101)-50;dp[0]=a[0];for(int i=1;i<n;++i)for(int j=max(0,i-k);j<i;++j)dp[i]=max(dp[i],dp[j]+a[i]);if(solver.maxResult(a,k)!=dp.back())throw runtime_error(\"jump VI oracle\");}\n",
+    "input": "Generated boundary/differential cases",
+    "output": "Matches independent oracle or structural invariants"
+  }
+]
